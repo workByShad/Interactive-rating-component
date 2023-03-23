@@ -25,7 +25,7 @@ function App() {
   );
 
   return (
-    <div className="div__container div__container--border">
+    <div className="div__container div__container--styles">
       <Card />
     </div>
   );
