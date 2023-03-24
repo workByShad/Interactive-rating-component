@@ -1,5 +1,5 @@
-const Card = () => {
-  return <div className="card card--styles">Card</div>;
+const Card = (props) => {
+  return <div className="card card--styles">{props.children}</div>;
 };
 
 export default Card;

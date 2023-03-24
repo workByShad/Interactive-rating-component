@@ -1,0 +1,20 @@
+import { useContext } from 'react';
+import { TextContext } from '../context/context';
+
+const RadioButtons = () => {
+  const numOfRadioButtons =
+    useContext(TextContext).ratingStateText.numOfRadioButtons;
+
+  return (
+    <div className="radio__container">
+      {numOfRadioButtons.map((radioButtonNumber) => (
+        <div>
+          <input type="radio" name="rating" id="{radioButtonNumber}" />
+          <label htmlFor="{radioButtonNumber}">{radioButtonNumber}</label>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default RadioButtons;

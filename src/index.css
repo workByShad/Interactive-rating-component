@@ -14,17 +14,35 @@
 }
 
 .div__container--styles {
-  border: thick solid red;
+  /* border: thick solid red; */
   background-color: hsl(216, 12%, 8%);
 }
 
 .card {
-  text-align: center;
-  height: 50%;
-  width: calc(100% / 3);
+  text-align: left;
+  height: 60%;
+  width: calc(100% / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 1rem; /* come back to this */
 }
 
 .card--styles {
-  border: thick solid blue;
+  /* border: thick solid blue; */
   background-color: hsl(213, 19%, 18%);
+}
+
+.radio__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+  /* border: thick solid blue; */
+}
+
+.submit-button--styles {
+  width: 100%;
 }
