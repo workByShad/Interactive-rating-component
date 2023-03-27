@@ -6,6 +6,7 @@ import RadioButtons from './components/RadioButtons';
 import SubmitButton from './components/SubmitButton';
 import SvgImage from './components/SvgImage';
 import Form from './components/Form';
+import Circle from './components/Circle';
 
 function App() {
   const text = {
@@ -27,7 +28,9 @@ function App() {
     <div className="div__container div__container--styles">
       <TextContext.Provider value={text}>
         <Card>
-          <SvgImage />
+          <Circle>
+            <SvgImage />
+          </Circle>
           <CardText />
           <RadioButtons />
           <SubmitButton />

@@ -7,10 +7,10 @@ const CardText = (props) => {
   const paragraph = useContext(TextContext).ratingStateText.paragraph;
 
   return (
-    <>
-      <h2>{title}</h2>
+    <div className="card-text--styles">
+      <h1>{title}</h1>
       <p>{paragraph}</p>
-    </>
+    </div>
   );
 };
 

@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { TextContext } from '../context/context';
+import Circle from './Circle';
 
 const RadioButtons = () => {
   const numOfRadioButtons =
@@ -9,8 +10,8 @@ const RadioButtons = () => {
     <div className="radio__container">
       {numOfRadioButtons.map((radioButtonNumber) => (
         <div>
-          <input type="radio" name="rating" id="{radioButtonNumber}" />
-          <label htmlFor="{radioButtonNumber}">{radioButtonNumber}</label>
+          <input type="radio" name="rating" id={radioButtonNumber} />
+          <label htmlFor={radioButtonNumber}>{radioButtonNumber}</label>
         </div>
       ))}
     </div>
