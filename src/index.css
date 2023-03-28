@@ -7,12 +7,17 @@
 
 p,
 label {
-  color: hsl(217, 12%, 63%);
+  color: #969da7;
   font-size: 15px;
 }
 
 h1 {
-  color: hsl(0, 0%, 100%);
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.paragraph--padding {
+  margin-top: 0.5rem;
 }
 
 .div__container {
@@ -24,13 +29,13 @@ h1 {
 }
 
 .div__container--styles {
-  background-color: hsl(216, 12%, 8%);
+  background-color: #141519;
 }
 
 .card {
   text-align: left;
-  height: 60%;
-  width: calc(100% / 2);
+  height: 55%;
+  width: calc(100% / 3.75);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,9 +44,9 @@ h1 {
 }
 
 .card--styles {
-  background-color: hsl(213, 19%, 18%);
-  padding: 5%;
-  border-radius: 7.5%;
+  background: radial-gradient(circle at top, #232a32, #171e28);
+  padding: 2rem;
+  border-radius: 2rem;
 }
 
 .card-text--styles {
@@ -56,16 +61,39 @@ h1 {
 }
 
 .submit-button--styles {
+  font-size: 15px;
+  letter-spacing: 0.1rem;
   width: 100%;
+  background: none;
+  background-color: #fc7613;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 0.75rem;
+}
+
+.submit-button--styles:hover {
+  background-color: #ffffff;
+  color: #fc7613;
 }
 
 input[type='radio'] {
   display: none;
 }
+input[type='radio'] + label {
+  cursor: pointer;
+}
+
+input[type='radio'] + label:hover {
+  background-color: #fc7613;
+  color: #ffffff;
+}
 
 .circle--styles,
 input[type='radio'] + label {
-  background-color: rgb(34, 34, 34);
+  background-color: #262f38;
   height: 3rem;
   width: 3rem;
   display: flex;
@@ -77,6 +105,6 @@ input[type='radio'] + label {
 }
 
 input[type='radio']:checked + label {
-  background-color: orange;
-  color: white;
+  background-color: #7c8898;
+  color: #ffffff;
 }

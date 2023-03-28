@@ -9,7 +9,7 @@ const CardText = (props) => {
   return (
     <div className="card-text--styles">
       <h1>{title}</h1>
-      <p>{paragraph}</p>
+      <p className="paragraph--padding">{paragraph}</p>
     </div>
   );
 };
