@@ -1,6 +1,6 @@
 .radio__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
@@ -8,6 +8,7 @@
 input[type='radio'] {
   display: none;
 }
+
 input[type='radio'] + label {
   cursor: pointer;
 }
