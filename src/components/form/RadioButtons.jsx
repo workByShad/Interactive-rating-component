@@ -1,6 +1,6 @@
+import './RadioButtons.css';
 import { useContext } from 'react';
-import { TextContext } from '../context/context';
-import Circle from './Circle';
+import { TextContext } from '../../context/context';
 
 const RadioButtons = () => {
   const numOfRadioButtons =

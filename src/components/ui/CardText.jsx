@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { TextContext } from '../context/context';
+import { TextContext } from '../../context/context';
 
 const CardText = (props) => {
   const title = useContext(TextContext).ratingStateText.title;
@@ -7,9 +7,9 @@ const CardText = (props) => {
   const paragraph = useContext(TextContext).ratingStateText.paragraph;
 
   return (
-    <div className="card-text--styles">
+    <div>
       <h1>{title}</h1>
-      <p className="paragraph--padding">{paragraph}</p>
+      <p className="paragraph__ratings--padding">{paragraph}</p>
     </div>
   );
 };

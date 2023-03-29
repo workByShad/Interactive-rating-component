@@ -1,7 +1,7 @@
-import CardText from './CardText';
+import CardText from '../ui/CardText';
 import RadioButtons from './RadioButtons';
 import SubmitButton from './SubmitButton';
-import SvgImage from './SvgImage';
+import SvgImage from '../ui/SvgImage';
 
 const Form = () => {
   return (

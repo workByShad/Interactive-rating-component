@@ -1,5 +1,6 @@
+import './SubmitButton.css';
 import { useContext } from 'react';
-import { TextContext } from '../context/context';
+import { TextContext } from '../../context/context';
 
 const SubmitButton = () => {
   const submitButtonText =

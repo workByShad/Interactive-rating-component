@@ -1,0 +1,17 @@
+.submit-button--styles {
+  letter-spacing: 0.1rem;
+  width: 100%;
+  background: none;
+  background-color: #fc7613;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 0.75rem;
+}
+
+.submit-button--styles:hover {
+  background-color: #ffffff;
+  color: #fc7613;
+}

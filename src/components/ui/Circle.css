@@ -1,0 +1,9 @@
+.circle--styles {
+  background-color: #262f38;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
