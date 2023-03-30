@@ -17,6 +17,10 @@ h1 {
   font-size: 28px;
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 .div__container {
   display: flex;
   justify-content: center;

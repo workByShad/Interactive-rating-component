@@ -1,7 +1,5 @@
-import starIcon from '../../assets/images/icon-star.svg';
-
-const SvgImage = () => {
-  return <img src={starIcon} />;
+const SvgImage = (props) => {
+  return <img src={props.icon} />;
 };
 
 export default SvgImage;

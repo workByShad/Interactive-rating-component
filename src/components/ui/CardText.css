@@ -1,7 +1,4 @@
-.paragraph__ratings {
-  line-height: 1.5rem;
-}
-
-.paragraph__ratings--padding {
+.paragraph__ratings,
+.paragraph__thank-you {
   margin-top: 0.5rem;
 }

@@ -1,0 +1,7 @@
+.you-selected {
+  color: orange;
+  background-color: gray;
+  border: 2px solid red;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+}
