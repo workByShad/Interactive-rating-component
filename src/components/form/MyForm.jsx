@@ -1,13 +1,14 @@
+import { Form } from 'react-router-dom';
 import RadioButtons from './RadioButtons';
 import SubmitButton from './SubmitButton';
 
-const Form = () => {
+const MyForm = () => {
   return (
-    <form>
+    <Form>
       <RadioButtons />
       <SubmitButton />
-    </form>
+    </Form>
   );
 };
 
-export default Form;
+export default MyForm;

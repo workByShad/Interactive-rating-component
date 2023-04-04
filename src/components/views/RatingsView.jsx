@@ -1,7 +1,7 @@
 import Card from '../ui/Card';
 import CardText from '../ui/CardText';
 import SvgImage from '../ui/SvgImage';
-import Form from '../form/Form';
+import MyForm from '../form/MyForm';
 import Circle from '../ui/Circle';
 import starIcon from '../../assets/images/icon-star.svg';
 import { useContext } from 'react';
@@ -21,7 +21,7 @@ const RatingsView = () => {
         paragraph={paragraph}
         classes={'paragraph__ratings'}
       />
-      <Form />
+      <MyForm />
     </Card>
   );
 };

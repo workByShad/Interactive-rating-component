@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   background: radial-gradient(circle at top, #232a32, #171e28);
-  padding: 2rem;
+  padding: 2.1rem;
   border-radius: 2rem;
 }
 
@@ -17,4 +17,5 @@
 .card__thank-you {
   text-align: center;
   align-items: center;
+  justify-content: space-around;
 }

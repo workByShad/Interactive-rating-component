@@ -1,15 +1,18 @@
 import './SubmitButton.css';
 import { useContext } from 'react';
 import { TextContext } from '../../context/TextContext';
+import { Link } from 'react-router-dom';
 
 const SubmitButton = () => {
   const submitButtonText =
     useContext(TextContext).ratingStateText.submitButtonText;
 
   return (
-    <button className="submit-button--styles" type="button">
-      {submitButtonText}
-    </button>
+    <Link to={'thank-you'} className="link">
+      <button className="submit-button--styles" type="button">
+        {submitButtonText}
+      </button>
+    </Link>
   );
 };
 

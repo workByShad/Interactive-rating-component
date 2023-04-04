@@ -9,7 +9,7 @@ const RadioButtons = () => {
   return (
     <div className="radio__container">
       {numOfRadioButtons.map((radioButtonNumber) => (
-        <div>
+        <div key={radioButtonNumber}>
           <input type="radio" name="rating" id={radioButtonNumber} />
           <label htmlFor={radioButtonNumber}>{radioButtonNumber}</label>
         </div>

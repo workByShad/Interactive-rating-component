@@ -26,6 +26,7 @@ input[type='radio'] + label {
   justify-content: center;
   align-items: center;
   border-radius: 5rem;
+  transition: 0.5s;
 }
 
 input[type='radio']:checked + label {
