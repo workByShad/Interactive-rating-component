@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution: ()
+- Solution: [interactive rating component](interactive-rating-component-8p0agskgb-workbyshad.vercel.app)
 
 ## My process
 
