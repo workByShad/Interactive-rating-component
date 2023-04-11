@@ -11,8 +11,6 @@ const MyForm = ({ setIsFormSubmitted }) => {
     setIsFormSubmitted(true);
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData.entries());
-    // console.log(formData);
-    // console.log(data);
     navigate('/thank-you', { state: data });
   };
 
