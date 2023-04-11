@@ -5,7 +5,9 @@ const YouSelected = () => {
   const { state } = useLocation();
 
   return (
-    <div className="you-selected">You Selected {state.rating} out of 5</div>
+    <div className="you-selected">
+      You Selected {state.rating || 0} out of 5
+    </div>
   );
 };
 

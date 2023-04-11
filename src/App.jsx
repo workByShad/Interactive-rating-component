@@ -3,20 +3,20 @@ import RatingsView from './components/views/RatingsView';
 import ThankYouView from './components/views/ThankYouView';
 import text from './data/text';
 import {
+  Navigate,
   Route,
   RouterProvider,
   Routes,
   createBrowserRouter,
   createRoutesFromElements,
 } from 'react-router-dom';
-import ErrorPage from './components/views/ErrorPage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<RatingsView />} />
       <Route path="/thank-you" element={<ThankYouView />} />
-      <Route path="*" element={<ErrorPage />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </>
   )
 );
