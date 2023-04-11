@@ -7,7 +7,7 @@ import starIcon from '../../assets/images/icon-star.svg';
 import { useContext } from 'react';
 import { TextContext } from '../../context/TextContext';
 
-const RatingsView = () => {
+const RatingsView = ({ setIsFormSubmitted }) => {
   const title = useContext(TextContext).ratingStateText.title;
   const paragraph = useContext(TextContext).ratingStateText.paragraph;
 
@@ -21,7 +21,7 @@ const RatingsView = () => {
         paragraph={paragraph}
         classes={'paragraph__ratings'}
       />
-      <MyForm />
+      <MyForm setIsFormSubmitted={setIsFormSubmitted} />
     </Card>
   );
 };

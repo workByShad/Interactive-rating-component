@@ -10,18 +10,27 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from 'react-router-dom';
-
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <>
-      <Route path="/" element={<RatingsView />} />
-      <Route path="/thank-you" element={<ThankYouView />} />
-      <Route path="*" element={<Navigate to="/" />} />
-    </>
-  )
-);
+import { useState } from 'react';
 
 function App() {
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <>
+        <Route
+          path="/"
+          element={<RatingsView setIsFormSubmitted={setIsFormSubmitted} />}
+        />
+        <Route
+          path="/thank-you"
+          element={isFormSubmitted ? <ThankYouView /> : <Navigate to="/" />}
+        />
+        <Route path="*" element={<Navigate to="/" />} />
+      </>
+    )
+  );
+
   return (
     <div className="div__container">
       <TextContext.Provider value={text}>
