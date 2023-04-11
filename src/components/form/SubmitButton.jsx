@@ -8,11 +8,11 @@ const SubmitButton = () => {
     useContext(TextContext).ratingStateText.submitButtonText;
 
   return (
-    <Link to={'thank-you'} className="link">
-      <button className="submit-button--styles" type="button">
-        {submitButtonText}
-      </button>
-    </Link>
+    // <Link to={'thank-you'} className="link">
+    <button className="submit-button--styles" type="submit">
+      {submitButtonText}
+    </button>
+    // </Link>
   );
 };
 

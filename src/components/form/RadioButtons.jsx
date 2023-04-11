@@ -10,7 +10,12 @@ const RadioButtons = () => {
     <div className="radio__container">
       {numOfRadioButtons.map((radioButtonNumber) => (
         <div key={radioButtonNumber}>
-          <input type="radio" name="rating" id={radioButtonNumber} />
+          <input
+            type="radio"
+            name="rating"
+            id={radioButtonNumber}
+            value={radioButtonNumber}
+          />
           <label htmlFor={radioButtonNumber}>{radioButtonNumber}</label>
         </div>
       ))}
