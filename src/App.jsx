@@ -1,4 +1,5 @@
 import { TextContext } from './context/TextContext';
+
 import RatingsView from './components/views/RatingsView';
 import ThankYouView from './components/views/ThankYouView';
 import text from './data/text';
@@ -9,18 +10,16 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from 'react-router-dom';
-import { useState } from 'react';
+import { useContext } from 'react';
+import { FormSubmissionContext } from './context/FormSubmissionContext';
 
 function App() {
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const { isFormSubmitted } = useContext(FormSubmissionContext);
 
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
-        <Route
-          path="/"
-          element={<RatingsView setIsFormSubmitted={setIsFormSubmitted} />}
-        />
+        <Route path="/" element={<RatingsView />} />
         <Route
           path="/thank-you"
           element={isFormSubmitted ? <ThankYouView /> : <Navigate to="/" />}

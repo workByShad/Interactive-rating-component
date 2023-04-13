@@ -21,7 +21,7 @@ const RatingsView = ({ setIsFormSubmitted }) => {
         paragraph={paragraph}
         classes={'paragraph__ratings'}
       />
-      <MyForm setIsFormSubmitted={setIsFormSubmitted} />
+      <MyForm />
     </Card>
   );
 };
