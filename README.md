@@ -40,13 +40,13 @@ Users should be able to:
 
 ### What I learned
 
-In this project, my main focus was to get out of tutorial hell and actually build something. I learned how to work on a project independently from start to finish (although I wouldn't consider this project completely finished) without mindlessly following a code-along video online.
+In this project, my main focus was to get out of tutorial hell and actually build something. I learned how to work on a project independently from start to finish without mindlessly following a code-along video online.
 I learned how to structure folders better, grouping components that are related together.
-I became more comfortable with CSS and learned about a convection called BEM, which I attempted to use.
-I learned the basics of React Router but had issues passing form data through it.
+I became more comfortable with responsive CSS (and CSS in general) and learned about a convection called BEM, which I attempted to use.
+I learned the basics of React Router.
 
 ### Continued development
 
-For future projects, I will have to learn how to work with React Router better. I had issues passing submitted radio button data when the submit button was clicked and never figured out how to solve that issue.
-I may, in the future, just opt to go with Next.JS instead, as it has routing built in already, and it has been my end goal of react to learn and use Next.JS comfortably.
-The project is also not configured to be viewable on all screen sizes, and I didn't have the time to work on this part.
+For future projects, I will have to learn how to work with React Router better. I initially had issues passing submitted radio button data when the submit button was clicked, but eventually figured out how to solve that issue.
+I may, in the future, work with Next.JS, as it has routing built in already, and it has been my end goal of react to learn and use Next.JS comfortably.
+The project was initially not configured to be viewable on all screen sizes, and it still isn't, but I managed to fix it up for the majority of screen sizes.
